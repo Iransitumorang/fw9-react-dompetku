@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 
 import dompetku from "../assets/img/dompetku.png";
 import dompetku2 from "../assets/img/dompetku2.png";
@@ -54,7 +55,7 @@ function LandingPage() {
       />
 
       <section>
-        <div class="about">
+        <aside class="about">
           <div class="about-top">
             <span>
               <span class="about-the">About</span> the Application.
@@ -99,8 +100,8 @@ function LandingPage() {
               </h6>
             </div>
           </div>
-        </div>
-        <div class="trusted-partner">
+        </aside>
+        <aside class="trusted-partner">
           <div class="tp-left">
             <span>
               100+ <span class="partner">Trusted </span> <br />
@@ -114,8 +115,9 @@ function LandingPage() {
           <div class="tp-right">
             <img src={sponsor} alt="sponsorship" />
           </div>
-        </div>
-        <div class="thegreat">
+        </aside>
+
+        <aside class="thegreat">
           <div>
             <img src={phone2} alt="phone" />
           </div>
@@ -153,8 +155,9 @@ function LandingPage() {
               </h5>
             </div>
           </div>
-        </div>
-        <div class="feedback">
+        </aside>
+
+        <aside class="feedback">
           <div class="feedback-top">
             <span class="wuas">
               What Users are <span class="saying">Saying.</span>
@@ -197,7 +200,7 @@ function LandingPage() {
               </h5>
             </div>
           </div>
-        </div>
+        </aside>
       </section>
 
       <footer>
@@ -218,6 +221,7 @@ function LandingPage() {
           </div>
         </div>
       </footer>
+
     </div>
   );
 }

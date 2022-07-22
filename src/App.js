@@ -1,9 +1,12 @@
-
-import React from 'react'
+// import Button from 'react-bootstrap/Button';
+import React from 'react';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
-    <div>Makan makan</div>
+    <div>
+       <LandingPage />
+    </div>
   )
 }
 

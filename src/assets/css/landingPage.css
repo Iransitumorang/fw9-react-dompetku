@@ -21,6 +21,7 @@ header .menu .logo img:nth-child(1) {
 
 header .menu .logo img:nth-child(2) {
     width: 25%;
+    margin-top: 4vw;
 }
 
 header .awesome {
@@ -52,7 +53,7 @@ header .awesome button {
     height: 4vw;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     background: #76BA99;
     box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
     border-radius: 12px;
@@ -115,7 +116,8 @@ section {
 }
 
 section .about {
-    background-color: rgba(71, 58, 209, 0.06);
+    /* background-color: rgba(71, 58, 209, 0.06); */
+    background-color: #DCD7C9;
     padding: 2vw;
 }
 
@@ -157,9 +159,9 @@ section .about-desc .support,
 .about-desc .easy-download {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
-    background: #FFFFFF;
+    background: #FCF8E8;
     width: 28%;
-    height: 18vw;
+    height: 16vw;
     padding: 2vw;
     font-weight: 700;
     font-size: 24px;
@@ -224,9 +226,9 @@ section .trusted-partner h6 {
     line-height: 31px;
 }
 
-
 section .thegreat {
-    background-color: rgba(71, 58, 209, 0.06);
+    background-color: #DCD7C9;
+    /* background-color: rgba(71, 58, 209, 0.06); */
     display: flex;
     color: #3A3D42;
     /* font-family: 'Nunito Sans'; */
@@ -249,7 +251,7 @@ section .thegreat .great {
 }
 
 section .thegreat .thegreat123 {
-    background: #FFFFFF;
+    background: #FCF8E8;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
     padding-top: 2vw;
@@ -326,7 +328,7 @@ section .feedback-users .sherina,
 .robert {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
-    background: #FFFFFF;
+    background: #FCF8E8;
     width: 28%;
     height: 20vw;
     /* font-family: 'Nunito Sans'; */
