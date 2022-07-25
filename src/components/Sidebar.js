@@ -1,16 +1,19 @@
-import React from 'react'
+import React from 'react';
+import '../assets/css/Style.css';
+import dompetku2 from "../assets/img/dompetku2.png";
+import transaction from "../assets/img/a-transaction.png";
 
-function sidebar() {
+function Sidebar() {
   return (
     <>
     {/* <div class="row min-vh-100"> */}
-    <article class="col-12 col-md-7 right-slide mb-3 row min-vh-100">
+    <article class="col-12 col-md-7 right-slide-login mb-3 row min-vh-100">
         <div>
-            <img src="../../assets/img/dompetku2.png" alt="logo brand" class="w-25 mt-3 ms-5 img-fluid"/>
+            <img src={dompetku2} alt="logo brand" class="w-25 mt-3 ms-5 img-fluid"/>
         </div>
         <div class="d-flex flex-column align-items-center">
             <div>
-                <img src="../assets/images/a-transaction.png" alt="transaction" class="img-fluid"/>
+                <img src={transaction} alt="transaction" class="img-fluid"/>
             </div>
             <div>
                 <h3 class="covering">App that Covering Banking Needs.</h3>
@@ -24,4 +27,4 @@ function sidebar() {
   )
 }
 
-export default sidebar
+export default Sidebar

@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
+import dompetku2 from "../assets/img/dompetku2.png";
+import right from "../assets/img/home-header.png";
 
 function HeaderDashboard() {
   return (
     <>
-         <header class="navbar bg-light d-md-block d-none">
-    <div class="container-fluid ms-5 me-5">
-      <img src="../../assets/img/dompetku2.png" class="w-25 img-fluid"/>
-      <img src="../assets/images/home-header.png" class="img-fluid"/>
-    </div>
-  </header>
+    <header class="navbar d-md-block d-none mb-5 pe-3">
+        <div class="container-fluid">
+            <img src={dompetku2} class="img-fluid" style={{maxWidth: "13%"}} alt="Logo"/>
+            <img src={right} class="img-fluid" alt='Brand'/>
+        </div>
+    </header>
     </>
   )
 }

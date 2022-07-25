@@ -1,5 +1,6 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import '../assets/css/LandingPage.css';
 
 import dompetku from "../assets/img/dompetku.png";
 import dompetku2 from "../assets/img/dompetku2.png";
@@ -32,19 +33,19 @@ function LandingPage() {
               We bring you a mobile app for banking problems that <br /> oftenly
               wasting much of your times.
             </h6>
-            <a href="/ibootstrap/dashboard/signup.html" class="try-it-free">
+            <Link to="/Signup" class="try-it-free">
               <button>Try It Free</button>
-            </a>
+            </Link>
           </div>
           {/* <img src={} alt="Transaction History" class="trans-hst-responsive"/> */}
         </div>
         <div class="header-right">
-          <a href="/ibootstrap/dashboard/login.html" class="login">
+          <Link to="/Login" class="login">
             <button>Login</button>
-          </a>
-          <a href="/ibootstrap/dashboard/signup.html" class="signup">
-            <button class="btn-signup">Sign Up</button>
-          </a>
+          </Link>
+          <Link to="/Signup" class="lp-signup">
+            <button class="btn-lp-signup">Sign Up</button>
+          </Link>
           <img src={sircleLine} class="sircle-line" alt="sircle-line" />
         </div>
       </header>

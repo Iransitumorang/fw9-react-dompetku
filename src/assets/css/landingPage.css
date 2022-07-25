@@ -91,7 +91,7 @@ header .awesome button {
     line-height: 25px;
 }
 
-.header-right .signup .btn-signup {
+.header-right .lp-signup .btn-lp-signup {
     background-color: #FFFFFF;
     color: #76BA99;
     box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
@@ -431,10 +431,10 @@ footer .contact span:nth-child(2) {
     }
 }
 
-.hamburger,
+/* .hamburger,
 .sidebar {
     display: none;
-}
+} */
 
 @media (max-width: 1000px) {
     .transaction-hst {

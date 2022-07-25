@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Sidebar from '../components/Sidebar';
+import '../assets/css/Style.css';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/esm/Button';
 
 function signup() {
   return (
-    <>
+      <div className='d-flex'>
+        <Sidebar />
         <aside class="col-12 col-md-5 d-flex flex-column justify-content-center gap-2 px-5">
                 <h3 class="start-acc">Start Accessing Banking Needs <br/> With All Devices and All Platforms <br/>
                     With 30.000+ Users</h3>
@@ -28,15 +33,15 @@ function signup() {
                         <input type="password" class="form-control form-border" placeholder="Create your password"/>
                     </div>
                 </div>
-                <div>
-                    <a href="/ibootstrap/dashboard/home.html" class="d-grid">
-                        <button type="button" class="btn btn-primary">Sign Up</button>
+                <div className='underlines'>
+                    <a href="/ibootstrap/dashboard/home.html" class="d-grid btn-signup">
+                        <Button type="button" variant="success">Sign Up</Button>
                     </a>
                 </div>
-                <h3 class="signup">Already have an account? Let’s <a href="/ibootstrap/dashboard/login.html">Log in</a>
+                <h3 class="signup">Already have an account? Let’s <Link to="/Login">Log in</Link>
                 </h3>
             </aside>
-    </>
+    </div>
   )
 }
 

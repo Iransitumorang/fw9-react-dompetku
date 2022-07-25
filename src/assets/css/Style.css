@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,800;1,400&display=swap');
+
+* {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+}
+
+.right-slide-login {
+    /* background-image: url(../images/background-login.png); */
+    background-color: #76BA99;
+    color: #FFFFFF;
+}
+
+.start-acc,
+.Secure-cp1,
+.forgot-pass {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #3A3D42;
+}
+
+.transfering,
+.Create-digits-cp1,
+.reset-your-pass {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(58, 61, 66, 0.6);
+}
+
+.form-border {
+    background: unset;
+    border: unset;
+    border-radius: unset;
+    border-bottom: 1px solid gray;
+}
+
+.form-border2 {
+    border: unset;
+    border-radius: unset;
+    border-bottom: 1px solid gray;
+}
+
+.password {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.password a {
+    color: #5800FF;
+    text-decoration: none;
+}
+
+.invalid {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #FF5B37;
+}
+
+.btn-login button,
+.btn-signup button,
+.cp1-btn-confirm button,
+.login-now button,
+.rp-btn-confirm button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.underlines a {
+    text-decoration: none;
+}
+
+.signup {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: rgba(58, 61, 66, 0.8);
+}
+
+.signup a {
+    color: #5800FF;
+    /* color: rgb(0, 255, 157); */
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.covering {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+
+/* INI STYLE TAMBAHAN UNTUK CREATE PIN 1 */
+.auth-form-wrapper {
+    padding-top: 15opx;
+}
+
+.form-create-pin {
+    padding: 2px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.form-create-pin input {
+    height: 70%;
+    width: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    border: unset;
+    border-bottom: 1px solid gray;
+}
+
+.cp1-btn-confirm button,
+.login-now button {
+    width: 87%;
+}
+
+.pin-input-wrapper {
+    max-height: 60px;
+    width: 75%;
+}
+
+.pin-input-wrapper input:focus {
+    outline: none;
+}
+
+/* INI NAVBAR */
+.left-slide-head,
+footer,
+header {
+    background-color: #76BA99;
+}
+
+/* INI STYLE HOME.JS */
+.left-slide,
+.right-slide {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+
+.nav-satu {
+    background: #FCF8E8;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+
+.parent-div {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+}
+
+.transfer-nav,
+.topup,
+.logout-nav,
+.dashboard,
+.profil-nav {
+    color: rgba(58, 61, 66, 0.8);
+}
+
+.left-slide-head {
+    border-radius: 20px;
+}
+
+.balance {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    color: #E0E0E0;
+}
+
+.seratus20 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+
+.number-phone {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #DFDCDC;
+}
+
+/* .transfer {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    width: 80%;
+    height: 46px;
+    padding: 6px;
+} */
+
+.home-transfer,
+.home-topup {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.home-transfer a,
+.home-topup a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.income {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6A6A6A;
+}
+
+.expense {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+}
+
+.trans-history {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.see-all {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6379F4;
+}
+
+/* INI STYLE HISTORY */
+.trans-history {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.this-week {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #7A7886;
+}
+
+.this-month {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #7A7886;
+}
+
+/* INI STYLE TRANSFER 2 */
+.search-receiver,
+.transfer-money {
+    /* font-family: 'Nunito Sans';
+    font-style: normal; */
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.type-amount {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7A7886;
+}
+
+.seratus-ribu {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    color: #6379F4;
+}
+
+.seratus20 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #3A3D42;
+    margin: 3vw auto;
+}
+
+/* .continue {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+} */
+
+/* INI STYLE FOOTER */
+footer h3 {
+    font-size: 16px !important;
+    line-height: 28px !important;
+}
+
+.all-reserved {
+    font-weight: 400;
+    color: rgba(239, 239, 239, 0.9);
+}
+
+.contact-us {
+    font-weight: 600;
+    color: #EFEFEF;
+}
