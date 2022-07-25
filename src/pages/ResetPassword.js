@@ -17,14 +17,10 @@ function ResetPassword() {
                 <div className="input-group flex-nowrap mt-5 mb-5">
                     <span className="input-group-text form-border2">
                         <img src={mail} alt="mail"/>
-                    {/* <FontAwesomeIcon icon="fa-solid fa-mug-saucer" /> */}
                     </span>
                     <input type="email" className="form-control form-border" value="pewdiepie1@gmail.com"/>
                 </div>
             </div>
-                {/* <div className="d-grid rp-btn-confirm">
-                    <Button type="button" variant="success">Confirm</Button>
-                </div> */}
                 <div className='underlines d-grid rp-btn-confirm'>
                     <Link to="/ResetPassword2" className="d-grid btn-login">
                         <Button type="button" variant="success">Confirm</Button>
