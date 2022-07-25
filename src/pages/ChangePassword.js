@@ -3,6 +3,7 @@ import '../assets/css/Style.css';
 import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
+import Button from 'react-bootstrap/esm/Button';
 import HambergerMenu from '../components/HambergerMenu';
 
 const ChangePassword = () => {
@@ -12,41 +13,41 @@ const ChangePassword = () => {
         <div className='d-flex'>
             <Navbar />
             <HambergerMenu />
-            <article class="col-12 col-md-8 ">
+            <article className="col-12 col-md-8 ">
             <aside>
-                <div class=" p-5">
-                    <div class="mt-2 ms-3 mb-5">
-                        <h3 class="change-password">Change Password
+                <div className=" p-5">
+                    <div className="mt-2 ms-3 mb-5">
+                        <h3 className="start-acc">Change Password
                         </h3>
-                        <h3 class="you-must-enter">You must enter your current password and then <br/> type your new password twice.
+                        <h3 className="transfering">You must enter your current password and then <br/> type your new password twice.
                         </h3>
                     </div>
                 </div>
             </aside>
 
-            <div class="d-flex flex-column align-items-center gap-3">
-                <div class="input-group flex-nowrap mb-3">
-                    <span class="input-group-text form-border2">
-                        <i class="fa-solid fa-lock"></i>
+            <div className="d-flex flex-column align-items-center gap-3 px-5">
+                <div className="input-group flex-nowrap mb-3">
+                    <span className="input-group-text form-border2">
+                        <i className="fa-solid fa-lock"></i>
                     </span>
-                    <input type="password" class="form-control form-border" placeholder="Current password"/>
+                    <input type="password" className="form-control form-border" placeholder="Current password"/>
                 </div>
-                <div class="input-group flex-nowrap mb-3">
-                    <span class="input-group-text form-border2">
-                        <i class="fa-solid fa-lock"></i>
+                <div className="input-group flex-nowrap mb-3">
+                    <span className="input-group-text form-border2">
+                        <i className="fa-solid fa-lock"></i>
                     </span>
-                    <input type="password" class="form-control form-border" placeholder="New password"/>
+                    <input type="password" className="form-control form-border" placeholder="New password"/>
                 </div>
-                <div class="input-group flex-nowrap mb-3">
-                    <span class="input-group-text form-border2">
-                        <i class="fa-solid fa-lock"></i>
+                <div className="input-group flex-nowrap mb-3">
+                    <span className="input-group-text form-border2">
+                        <i className="fa-solid fa-lock"></i>
                     </span>
-                    <input type="password" class="form-control form-border" placeholder="Repeat New password"/>
+                    <input type="password" className="form-control form-border" placeholder="Repeat New password"/>
                 </div>
 
-                <div class="input-group flex-nowrap mb-3 mt-3 d-grid">
-                    <button class="btn btn-primary mb-5 btn-change-password" type="button">Change Password
-                    </button>
+                <div className="input-group flex-nowrap mb-3 mt-3 d-grid">
+                    <Button variant="success" className="mb-5 btn-change-password" type="button">Change Password
+                    </Button>
                 </div>
             </div>
         </article>

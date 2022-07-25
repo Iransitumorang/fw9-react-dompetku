@@ -3,7 +3,11 @@ import '../assets/css/Style.css';
 import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 import HambergerMenu from '../components/HambergerMenu';
+import Button from 'react-bootstrap/esm/Button';
+import transfer from "../assets/img/transfer-failed.png";
+import contactdashboard from "../assets/img/contacts-dashboard.png";
 
 const StatusFailed = () => {
   return (
@@ -12,29 +16,40 @@ const StatusFailed = () => {
         <div className='d-flex'>
             <Navbar />
             <HambergerMenu />
-
-            <article class="col-12 col-md-8 ">
+            <article className="col-12 col-md-8 ">
             <aside>
-                <div class="right-slide p-5">
-                    <div class="d-flex justify-content-center">
-                        <img src="../assets/images/transfer-gagal.png" alt="Transfer Failed"/>
+                <div className="right-slide p-5">
+                    <div className="d-flex justify-content-center mb-5">
+                        <img src={transfer} alt="Transfer Failed"/>
                     </div>
-                    <div class="d-flex flex-column">
-                        <img src="../assets/images/home/confirm-1.png" alt='confirm'/>
-                        <img src="../assets/images/home/confirm-2.png" alt='confirm'/>
-                        <img src="../assets/images/home/confirm-3.png" alt='confirm'/>
-                        <img src="../assets/images/home/confirm-4.png" alt='confirm'/>
+                    <div className='d-flex flex-column gap-3 ms-4 confirm-detail-head'>
+                            <div className='d-flex flex-column confirm-detail p-3'>
+                                <span className='primary'>Amount</span>
+                                <span className='number-phone'>Rp 100.000</span>
+                            </div>
+                            <div className='d-flex flex-column confirm-detail p-3'>
+                                <span className='primary'>Balance Left</span>
+                                <span className='number-phone'>Rp 20.000</span>
+                            </div>
+                            <div className='d-flex flex-column confirm-detail p-3'>
+                                <span className='primary'>Date & Time</span>
+                                <span className='number-phone'>May 11, 2020 - 12.20</span>
+                            </div>
+                            <div className='d-flex flex-column confirm-detail p-3'>
+                                <span className='primary'>Notes</span>
+                                <span className='number-phone'>For buying some socks</span>
+                            </div>
+                        </div>
+                    <div className="mt-5 ms-4">
+                        <h3 className="transfer-to">Transfer To</h3>
                     </div>
-                    <div class="mt-2 ms-3">
-                        <h3 class="transfer-to">Transfer To</h3>
+                    <div className="d-flex flex-column">
+                        <img src={contactdashboard} alt="Dashboard"/>
                     </div>
-                    <div class="d-flex flex-column">
-                        <img src="../assets/images/home/contacts-dashboard.png" alt="Dashboard"/>
-                    </div>
-                    <div class="d-md-flex justify-content-end">
-                        <a href="/ibootstrap/dashboard/transfer1.html">
-                            <button class="btn btn-primary me-3 try-again" type="button">Try Again</button>
-                        </a>
+                    <div className="d-md-flex justify-content-end">
+                        <Link to="/Transfer1">
+                            <Button variant="success" className="me-3 try-again" type="button">Try Again</Button>
+                        </Link>
                     </div>
                 </div>
             </aside>

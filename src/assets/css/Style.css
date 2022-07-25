@@ -13,7 +13,8 @@
 
 .start-acc,
 .Secure-cp1,
-.forgot-pass {
+.forgot-pass,
+.personal-info {
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
@@ -22,7 +23,9 @@
 
 .transfering,
 .Create-digits-cp1,
-.reset-your-pass {
+.reset-your-pass,
+.wegot-personal,
+.enter-your {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -40,6 +43,7 @@
     border: unset;
     border-radius: unset;
     border-bottom: 1px solid gray;
+    background-color: unset;
 }
 
 .password {
@@ -66,13 +70,16 @@
 .btn-signup button,
 .cp1-btn-confirm button,
 .login-now button,
-.rp-btn-confirm button {
+.rp-btn-confirm button,
+.details,
+.transfer {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
 }
 
-.underlines a {
+.underlines a,
+a {
     text-decoration: none;
 }
 
@@ -99,6 +106,11 @@
     color: #FFFFFF;
 }
 
+/* article {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+} */
 
 /* INI STYLE TAMBAHAN UNTUK CREATE PIN 1 */
 .auth-form-wrapper {
@@ -137,14 +149,15 @@
 
 /* INI NAVBAR */
 .left-slide-head,
+.left-slide-home,
 footer,
-header {
+.header-dashboard {
     background-color: #76BA99;
 }
 
 /* INI STYLE HOME.JS */
-.left-slide,
-.right-slide {
+.right-slide,
+.left-slide {
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
@@ -170,25 +183,25 @@ header {
     color: rgba(58, 61, 66, 0.8);
 }
 
-.left-slide-head {
+.left-slide-home {
     border-radius: 20px;
 }
 
-.balance {
+.balance-home {
     font-weight: 400;
     font-size: 18px;
     line-height: 31px;
     color: #E0E0E0;
 }
 
-.seratus20 {
+.seratus20-home {
     font-weight: 700;
     font-size: 40px;
     line-height: 55px;
     color: #FFFFFF;
 }
 
-.number-phone {
+.number-phone-home {
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
@@ -303,11 +316,215 @@ header {
     margin: 3vw auto;
 }
 
-/* .continue {
+/* INI STYLE PIN CONFIRMATION */
+.modal-value {
+    padding: 2px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.modal-value input {
+    height: 70%;
+    width: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    border: unset;
+    border-bottom: 1px solid gray;
+}
+
+.modal-footer {
+    border: unset !important;
+}
+
+.modal-btn-continue,
+.modal-continue,
+.how-to-topup {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-} */
+}
+
+/* STATUS */
+.transfer-to,
+.enter-pin {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #514F5B;
+}
+
+.btn-back-home {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    height: 55px;
+    margin-top: 2.5vw;
+}
+
+.downloadpdf {
+    margin: -2vw;
+    margin-right: -3vw;
+    margin-left: -8vw;
+}
+
+.try-again {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    height: 4vw;
+    width: 11vw;
+    margin-top: 3vw;
+}
+
+/* INI CHANGE PIN */
+.auth-form-wrapper .value {
+    padding: 2px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.auth-form-wrapper input {
+    height: 70%;
+    width: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    border: unset;
+    border-bottom: 1px solid gray;
+}
+
+.change-pin-btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    width: 31vw;
+}
+
+/* ======RANDOM===== */
+.form-value {
+    width: 50%;
+}
+
+.modal-dialog {
+    margin-right: 3vw;
+}
+
+/* PROFILE NOTIF */
+.today {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #7A7886;
+}
+
+.profil-notif-img {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: 29vw;
+    padding: 2vw;
+    height: 7vw;
+}
+
+.profil-notif-img2 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: 29vw;
+    padding: 2vw;
+    margin: 1vw auto;
+    height: 7vw;
+}
+
+.this-week {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #7A7886;
+}
+
+.profil-notif-img3 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: 29vw;
+    padding: 2vw;
+    margin: 1vw auto;
+    height: 7vw;
+}
+
+.profil-notif-img4 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: 29vw;
+    padding: 2vw;
+    height: 7vw;
+}
+
+/* MANAGE NUMBER */
+.primary-parent {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+}
+
+.primary {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7A7886;
+}
+
+.number-phone {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #514F5B;
+}
+
+/* CONFIRM */
+.confirm-detail {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+/* PIN CONFIRM */
+.modal-header {
+    border-bottom: unset;
+}
+
+.modal-continue {
+    text-align: end;
+    margin-right: 20px;
+}
+
+/* TOP UP */
+.instructions {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.angka {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #6379F4;
+}
+
+.inst-value {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #7A7886;
+}
 
 /* INI STYLE FOOTER */
 footer h3 {

@@ -20,55 +20,55 @@ function LandingPage() {
   return (
     <div>
       <header>
-        <div class="menu">
-          <div class="logo">
+        <div className="menu">
+          <div className="logo">
             <img src={dompetku} alt="logo dompetku" />
             <img src={dompetku2} alt="logo dompetku" />
           </div>
-          <div class="awesome">
-            <span class="saving">
-              Awesome App <br /> For Saving <span class="time"> Time.</span>
+          <div className="awesome">
+            <span className="saving">
+              Awesome App <br /> For Saving <span className="time"> Time.</span>
             </span>
             <h6>
               We bring you a mobile app for banking problems that <br /> oftenly
               wasting much of your times.
             </h6>
-            <Link to="/Signup" class="try-it-free">
+            <Link to="/Signup" className="try-it-free">
               <button>Try It Free</button>
             </Link>
           </div>
-          {/* <img src={} alt="Transaction History" class="trans-hst-responsive"/> */}
+          {/* <img src={} alt="Transaction History" className="trans-hst-responsive"/> */}
         </div>
-        <div class="header-right">
-          <Link to="/Login" class="login">
+        <div className="header-right">
+          <Link to="/Login" className="login">
             <button>Login</button>
           </Link>
-          <Link to="/Signup" class="lp-signup">
-            <button class="btn-lp-signup">Sign Up</button>
+          <Link to="/Signup" className="lp-signup">
+            <button className="btn-lp-signup">Sign Up</button>
           </Link>
-          <img src={sircleLine} class="sircle-line" alt="sircle-line" />
+          <img src={sircleLine} className="sircle-line" alt="sircle-line" />
         </div>
       </header>
       <img
         src={phoneHeader}
         alt="Transaction History"
-        class="transaction-hst"
+        className="transaction-hst"
       />
 
       <section>
-        <aside class="about">
-          <div class="about-top">
+        <aside className="about">
+          <div className="about-top">
             <span>
-              <span class="about-the">About</span> the Application.
+              <span className="about-the">About</span> the Application.
             </span>
             <h6>
               We have some great features from the application and it's totally
               free <br /> to use by all users around the world.
             </h6>
           </div>
-          <div class="about-desc">
-            <div class="support">
-              <div class="icons8">
+          <div className="about-desc">
+            <div className="support">
+              <div className="icons8">
                 <img src={support} alt="Support" />
               </div>
               <span>24/7 Support</span>
@@ -77,8 +77,8 @@ function LandingPage() {
                 whenever you want <br /> and we will respond it.
               </h6>
             </div>
-            <div class="data-privacy">
-              <div class="icons8">
+            <div className="data-privacy">
+              <div className="icons8">
                 <img src={dataPrivacy} alt="data-privacy" />
               </div>
               <span>Data Privacy</span>
@@ -87,8 +87,8 @@ function LandingPage() {
                 will encrypt any <br /> data you submitted to us.
               </h6>
             </div>
-            <div class="easy-download">
-              <div class="icons8">
+            <div className="easy-download">
+              <div className="icons8">
                 <img
                   src={easyDownload}
                   alt="easy-download"
@@ -102,10 +102,10 @@ function LandingPage() {
             </div>
           </div>
         </aside>
-        <aside class="trusted-partner">
-          <div class="tp-left">
+        <aside className="trusted-partner">
+          <div className="tp-left">
             <span>
-              100+ <span class="partner">Trusted </span> <br />
+              100+ <span className="partner">Trusted </span> <br />
               Partners.
             </span>
             <h6>
@@ -113,44 +113,44 @@ function LandingPage() {
               brand partners around the globe.
             </h6>
           </div>
-          <div class="tp-right">
+          <div className="tp-right">
             <img src={sponsor} alt="sponsorship" />
           </div>
         </aside>
 
-        <aside class="thegreat">
+        <aside className="thegreat">
           <div>
             <img src={phone2} alt="phone" />
           </div>
-          <div class="great-features">
-            <span class="zwallet-features">
-              All The <span class="great">Great</span>
+          <div className="great-features">
+            <span className="zwallet-features">
+              All The <span className="great">Great</span>
               <br />
               Zwallet Features.
             </span>
-            <div class="thegreat123">
-              <h5 class="gf123">
-                <span class="no-great">1.</span> Small Fee
+            <div className="thegreat123">
+              <h5 className="gf123">
+                <span className="no-great">1.</span> Small Fee
               </h5>
-              <h5 class="text">
+              <h5 className="text">
                 We only charge 5% of every success transaction done in Zwallet
                 app.
               </h5>
             </div>
-            <div class="thegreat123">
-              <h5 class="gf123">
-                <span class="no-great">2.</span> Data Secured
+            <div className="thegreat123">
+              <h5 className="gf123">
+                <span className="no-great">2.</span> Data Secured
               </h5>
-              <h5 class="text">
+              <h5 className="text">
                 All your data is secured properly in our system and it's
                 encrypted.
               </h5>
             </div>
-            <div class="thegreat123">
-              <h5 class="gf123">
-                <span class="no-great">3.</span> User Friendly
+            <div className="thegreat123">
+              <h5 className="gf123">
+                <span className="no-great">3.</span> User Friendly
               </h5>
-              <h5 class="text">
+              <h5 className="text">
                 Zwallet come up with modern and sleek design and not
                 complicated.
               </h5>
@@ -158,10 +158,10 @@ function LandingPage() {
           </div>
         </aside>
 
-        <aside class="feedback">
-          <div class="feedback-top">
-            <span class="wuas">
-              What Users are <span class="saying">Saying.</span>
+        <aside className="feedback">
+          <div className="feedback-top">
+            <span className="wuas">
+              What Users are <span className="saying">Saying.</span>
             </span>
             <h5>
               We have some great features from the application and it’s totally
@@ -169,8 +169,8 @@ function LandingPage() {
             </h5>
           </div>
 
-          <div class="feedback-users">
-            <div class="sherina">
+          <div className="feedback-users">
+            <div className="sherina">
               <div>
                 <img src={sherina} alt="sherina" />
               </div>
@@ -180,7 +180,7 @@ function LandingPage() {
                 app that I’ve ever use <br /> in my entire life”
               </h5>
             </div>
-            <div class="jessica">
+            <div className="jessica">
               <div>
                 <img src={jessica} alt="jessica" />
               </div>
@@ -190,7 +190,7 @@ function LandingPage() {
                 easy to use and it’s <br /> 100% free app”
               </h5>
             </div>
-            <div class="robert">
+            <div className="robert">
               <div>
                 <img src={robert} alt="robert" />
               </div>
@@ -205,7 +205,7 @@ function LandingPage() {
       </section>
 
       <footer>
-        <div class="logo-foot">
+        <div className="logo-foot">
           <img src={dompetku} alt="logo dompetku" />
           <img src={dompetku2} alt="logo dompetku" />
         </div>
@@ -213,10 +213,10 @@ function LandingPage() {
           Simplify financial needs and saving <br /> much time in banking needs
           with <br /> one single app.
         </span>
-        <img src={garisFooter} alt="garis footer" class="hr" />
-        <div class="copyright">
-          <div class="reserved">2020 iWallet. All right reserved.</div>
-          <div class="contact">
+        <img src={garisFooter} alt="garis footer" className="hr" />
+        <div className="copyright">
+          <div className="reserved">2020 iWallet. All right reserved.</div>
+          <div className="contact">
             <span>+62 5637 8882 9901</span>
             <span>contact@zwallet.com</span>
           </div>

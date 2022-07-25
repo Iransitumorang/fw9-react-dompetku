@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/css/Style.css';
+import { Link } from 'react-router-dom';
 
 import dashboard from "../assets/img/icons8-dashboard-32.png";
 import transfer from "../assets/img/icons8-up-arrow-32.png";
@@ -9,31 +10,31 @@ import logout from "../assets/img/icons8-logout-32.png";
 
 function Navbar() {
   function berubah() {
-    document.getElementById("dashboard").style.color = "yellow";
+    document.getElementById("dashboard").style.color = "Green";
   }
   return (
     <>
-        <nav class="col-md-3 d-md-flex ms-5 p-5 p-md-5 nav-satu d-none">
-          <div class="d-flex flex-column parent-div">
-            <nav class="nav flex-fill flex-column">
-              <a onClick={berubah} id="dashboard"  class="nav-link dashboard mb-3" href="/ibootstrap/dashboard/home.html">
-                <img src={dashboard} style={{width: "15%"}} class="img-fluid me-3" alt='Dashboard'/> Dashboard
-              </a>
-              <a class="nav-link transfer-nav mb-3" href="/ibootstrap/dashboard/transfer1.html">
-                <img src={transfer} style={{width: "15%"}} class="img-fluid me-3" alt='Transfer'/> Transfer
-              </a>
-              <a class="nav-link topup mb-3" href="/ibootstrap/dashboard/topup.html">
-                <img src={topup} style={{width: "15%"}} class="img-fluid me-3" alt='Top Up'/> Top Up
-              </a>
-              <a class="nav-link profil-nav" href="/ibootstrap/dashboard/profile1.html">
-                <img src={profile} style={{width: "15%"}} class="img-fluid me-3" alt='profile'/> Profile
-              </a>
+        <nav className="col-md-3 d-md-flex ms-5 p-5 p-md-5 me-5 nav-satu d-none">
+          <div className="d-flex flex-column parent-div">
+            <nav className="nav flex-fill flex-column">
+              <Link onClick={berubah} id="dashboard"  className="nav-link dashboard mb-3" to="/Home">
+                <img src={dashboard} style={{width: "15%"}} className="img-fluid me-3" alt='Dashboard'/> Dashboard
+              </Link>
+              <Link onClick={berubah} className="nav-link transfer-nav mb-3" to="/Transfer1">
+                <img src={transfer} style={{width: "15%"}} className="img-fluid me-3" alt='Transfer'/> Transfer
+              </Link>
+              <Link onClick={berubah} className="nav-link topup mb-3" to="/Topup">
+                <img src={topup} style={{width: "15%"}} className="img-fluid me-3" alt='Top Up'/> Top Up
+              </Link>
+              <Link onClick={berubah} className="nav-link profil-nav" to="/Profile1">
+                <img src={profile} style={{width: "15%"}} className="img-fluid me-3" alt='profile'/> Profile
+              </Link>
             </nav>
 
-            <nav class="nav d-flex flex-end">
-              <a class="nav-link logout-nav ms-1" href="/ibootstrap/dashboard/home.html">
-                <img src={logout} style={{width: "15%"}} class="img-fluid me-3" alt='Logout'/> Logout
-              </a>
+            <nav className='ms-3'>
+              <Link onClick={berubah} className="nav-link logout-nav ms-1" to="/">
+                <img src={logout} style={{width: "15%"}} className="img-fluid me-3" alt='Logout'/> Logout
+              </Link>
             </nav>
           </div>
         </nav>

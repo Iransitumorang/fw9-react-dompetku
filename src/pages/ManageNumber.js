@@ -4,6 +4,7 @@ import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
 import HambergerMenu from '../components/HambergerMenu';
+import trash from "../assets/img/trash.png"
 
 function ManageNumber () {
   return (
@@ -12,24 +13,23 @@ function ManageNumber () {
         <div className='d-flex'>
             <Navbar />
             <HambergerMenu />
-            <article class="col-12 col-md-8 ">
+            <article className="col-12 col-md-8 ">
             <aside>
-                <div class="right-slide p-5">
-                    <div class="mt-2 ms-3">
-                        <h3 class="manage-numb">Manage Phone Number
+                <div className="right-slide p-5">
+                    <div className="mt-2 ms-3">
+                        <h3 className="start-acc">Manage Phone Number
                         </h3>
-                        <h3 class="you-can-only">You can only delete the phone number and then <br/> you must add another
+                        <h3 className="transfering">You can only delete the phone number and then <br/> you must add another
                             phone number.</h3>
                     </div>
 
-
-                    <div class="d-md-flex justify-content-md-between p-md-2 primary-parent">
-                        <div class="ms-4">
-                            <h3 class="pt-2 primary">Primary</h3>
-                            <h3 class="number-phone">+62 813 9387 7946</h3>
+                    <div className="d-md-flex justify-content-md-between p-md-2 primary-parent">
+                        <div className="ms-4">
+                            <h3 className="pt-2 primary">Primary</h3>
+                            <h3 className="number-phone">+62 813 9387 7946</h3>
                         </div>
                         <div>
-                            <img src="../assets/images/trash.png" class="p-4" alt='trash'/>
+                            <img src={trash} className="p-4" alt='trash'/>
                         </div>
                     </div>
                 </div>

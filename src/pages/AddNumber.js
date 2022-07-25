@@ -4,6 +4,7 @@ import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
 import HambergerMenu from '../components/HambergerMenu';
+import Button from 'react-bootstrap/esm/Button';
 
 const AddNumber = () => {
   return (
@@ -12,28 +13,28 @@ const AddNumber = () => {
         <div className='d-flex'>
             <Navbar />
             <HambergerMenu />
-            <article class="col-12 col-md-8 ">
+            <article className="col-12 col-md-8 ">
             <aside>
-                <div class="right-slide p-5">
-                    <div class="mt-2 ms-3 mb-5">
-                        <h3 class="add-number">Add Phone Number</h3>
-                        <h3 class="add-least">Add at least one phone number for the transfer <br/> ID so you can
+                <div className="right-slide p-5">
+                    <div className="mt-2 ms-3 mb-5">
+                        <h3 className="start-acc">Add Phone Number</h3>
+                        <h3 className="transfering">Add at least one phone number for the transfer <br/> ID so you can
                             start transfering your money to <br/> another user.
                         </h3>
                     </div>
 
                     <div>
-                        <div class="d-flex justify-content-center">
-                            <div class="input-group flex-nowrap mb-3 form-value">
-                                <span class="input-group-text form-border2">
-                                    <i class="fa-solid fa-phone"></i>
+                        <div className="d-flex justify-content-center">
+                            <div className="input-group flex-nowrap mb-3 form-value">
+                                <span className="input-group-text form-border2">
+                                    <i className="fa-solid fa-phone"></i>
                                 </span>
-                                <input type="number" class="form-control form-border"
+                                <input type="number" className="form-control form-border"
                                     placeholder="Enter your phone number"/>
                             </div>
                         </div>
-                        <div class="d-grid col-6 mx-auto">
-                            <button class="btn btn-primary mt-3 mb-5 add-number2" type="button">Add Phone Number</button>
+                        <div className="d-grid col-6 mx-auto">
+                            <Button variant="success" className="mt-3 mb-5 add-number2" type="button">Add Phone Number</Button>
                         </div>
                     </div>
                 </div>

@@ -4,6 +4,12 @@ import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
 import HambergerMenu from '../components/HambergerMenu';
+import Button from 'react-bootstrap/esm/Button';
+import { Link } from 'react-router-dom';
+import success from "../assets/img/transfer-success.png";
+import downloadpdf from "../assets/img/download-pdf.png";
+import bagikan from "../assets/img/bagikan.png";
+import contactdashboard from "../assets/img/contacts-dashboard.png";
 
 const StatusSuccess = () => {
   return (
@@ -12,36 +18,47 @@ const StatusSuccess = () => {
         <div className='d-flex'>
             <Navbar />
             <HambergerMenu />
-
-          <article class="col-12 col-md-8 ">
+          <article className="col-12 col-md-8 ">
             <aside>
-                <div class="right-slide p-5">
-                    <div className='d-flex justify-content-center'>
-                        <img src="../assets/images/transfer-succes.png" alt="Transfer Success" />
+                <div className="right-slide p-5">
+                    <div className='d-flex justify-content-center mb-5'>
+                        <img src={success} alt="Transfer Success" />
                     </div>
-                    <div class="d-flex flex-column">
-                        <img src="../assets/images/home/confirm-1.png" alt='confirm'/>
-                        <img src="../assets/images/home/confirm-2.png" alt='confirm'/>
-                        <img src="../assets/images/home/confirm-3.png" alt='confirm'/>
-                        <img src="../assets/images/home/confirm-4.png" alt='confirm'/>
+                    <div className='d-flex flex-column gap-5 ms-4 confirm-detail-head'>
+                            <div className='d-flex flex-column confirm-detail p-3'>
+                                <span className='primary'>Amount</span>
+                                <span className='number-phone'>Rp 100.000</span>
+                            </div>
+                            <div className='d-flex flex-column confirm-detail p-3'>
+                                <span className='primary'>Balance Left</span>
+                                <span className='number-phone'>Rp 20.000</span>
+                            </div>
+                            <div className='d-flex flex-column confirm-detail p-3'>
+                                <span className='primary'>Date & Time</span>
+                                <span className='number-phone'>May 11, 2020 - 12.20</span>
+                            </div>
+                            <div className='d-flex flex-column confirm-detail p-3'>
+                                <span className='primary'>Notes</span>
+                                <span className='number-phone'>For buying some socks</span>
+                            </div>
+                        </div>
+                    <div className="mt-5 ms-4">
+                        <h3 className="transfer-to">Transfer To </h3>
                     </div>
-                    <div class="mt-2 ms-3">
-                        <h3 class="transfer-to">Transfer To </h3>
+                    <div className="d-flex flex-column">
+                        <img src={contactdashboard} alt="Dashboard" />
                     </div>
-                    <div class="d-flex flex-column">
-                        <img src="../assets/images/home/contacts-dashboard.png" alt="Dashboard" />
-                    </div>
-                    <div class="d-md-flex justify-content-end">
-                        <div style={{margin: "-25px"}}>
-                            <img src="../assets/images/bagikan.png" alt='bagikan'/>
+                    <div className="d-md-flex justify-content-end">
+                        <div style={{marginTop: "-2vw"}}>
+                            <img src={bagikan} alt='bagikan'/>
                         </div>
                         <div className='downloadpdf'>
-                            <img src="../assets/images/download-pdf.png" alt='download'/>
+                            <img src={downloadpdf} alt='download'/>
                         </div>
-                        <div>
-                            <a href="/ibootstrap/dashboard/home.html">
-                                <button class="btn btn-primary me-3 btn-back-home" type="button">Back To Home</button>
-                            </a>
+                        <div className='status-btn'>
+                            <Link to="/Home">
+                                <Button variant="success" className="me-3 btn-back-home" type="button">Back To Home</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
