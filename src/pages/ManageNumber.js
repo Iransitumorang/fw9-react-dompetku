@@ -1,12 +1,19 @@
-import React from 'react';
+// import React from 'react';
 import '../assets/css/Style.css';
 import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
 import HambergerMenu from '../components/HambergerMenu';
 import trash from "../assets/img/trash.png"
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 function ManageNumber () {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
   return (
     <div>
         <HeaderDashboard />
@@ -29,8 +36,22 @@ function ManageNumber () {
                             <h3 className="number-phone">+62 813 9387 7946</h3>
                         </div>
                         <div>
-                            <img src={trash} className="p-4" alt='trash'/>
+                            <img src={trash} className="p-4" alt='trash' onClick={handleShow}/>
                         </div>
+                        <Modal show={show} onHide={handleClose}>
+                            <Modal.Header closeButton>
+                            <Modal.Title>Manage Phone Number</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>Are you sure want to delete tihs number?</Modal.Body>
+                            <Modal.Footer>
+                            <Button variant="secondary" onClick={handleClose}>
+                                Yes
+                            </Button>
+                            <Button variant="success" onClick={handleClose}>
+                                Not Sure
+                            </Button>
+                            </Modal.Footer>
+                        </Modal>
                     </div>
                 </div>
             </aside>

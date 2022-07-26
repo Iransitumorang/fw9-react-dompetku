@@ -32,7 +32,7 @@ function Navbar() {
             </nav>
 
             <nav className='ms-3'>
-              <Link onClick={berubah} className="nav-link logout-nav ms-1" to="/">
+              <Link onClick={berubah} className="nav-link logout-nav ps-3" to="/Login">
                 <img src={logout} style={{width: "15%"}} className="img-fluid me-3" alt='Logout'/> Logout
               </Link>
             </nav>

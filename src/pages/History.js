@@ -23,7 +23,6 @@ const History = () => {
                             <h3 className="trans-history">Transaction History</h3>
                             <h3 className="my-5 this-week">This Week</h3>
                         </div>
-
                         <div className="d-flex flex-column">
                             <div className="d-flex flex-column w-50">
                                 <img src={dashboard} alt="History Dashboard"

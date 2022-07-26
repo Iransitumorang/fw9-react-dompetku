@@ -3,7 +3,6 @@ import Sidebar from '../components/Sidebar';
 import '../assets/css/Style.css';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import mail from "../assets/img/icons8-mail-24.png";
 
 function ResetPassword() {

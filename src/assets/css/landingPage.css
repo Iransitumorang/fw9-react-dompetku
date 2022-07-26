@@ -9,6 +9,10 @@
     font-style: normal;
 }
 
+.hamburger, .sidebar {
+    display: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -630,7 +634,7 @@ footer .contact span:nth-child(2) {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1117px) {
 
 
     .logo img,
@@ -768,3 +772,4 @@ footer .contact span:nth-child(2) {
     }
 
 }
+

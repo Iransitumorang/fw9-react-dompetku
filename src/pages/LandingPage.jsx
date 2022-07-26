@@ -17,8 +17,33 @@ import jessica from "../assets/img/jessica.png";
 import robert from "../assets/img/robert.png";
 
 function LandingPage() {
+  // document.getElementsByClassName("toggler-navbar")[0].addEventListener("click");
+  // document.getElementsByClassName("hamburger-menu")[0].classList.toggle('open')
+  // document.getElementsByClassName("sidebar")[0].classList.toggle('open')
+
   return (
     <div>
+        <div className="hamburger">
+          <div className="toggler-navbar">
+            <div className="hamburger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        <Link className="logo-hbg" to="/Home">
+            <img src={dompetku2} alt="dompetku"/>
+        </Link>
+        </div>
+        <div className="sidebar">
+          <div>
+            <Link to="/Login" className="login-hamburger">Login</Link>
+          </div>
+          <div>
+            <Link to="/Signup" className="login-hamburger">Sign Up</Link>
+          </div>
+        </div>
+
       <header>
         <div className="menu">
           <div className="logo">
@@ -222,7 +247,6 @@ function LandingPage() {
           </div>
         </div>
       </footer>
-
     </div>
   );
 }

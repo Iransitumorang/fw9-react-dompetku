@@ -4,7 +4,8 @@ import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
 import HambergerMenu from '../components/HambergerMenu';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const AddNumber = () => {
   return (
@@ -33,9 +34,11 @@ const AddNumber = () => {
                                     placeholder="Enter your phone number"/>
                             </div>
                         </div>
-                        <div className="d-grid col-6 mx-auto">
+                        {/* <div className="d-grid col-6 mx-auto"> */}
+                        <Link to="/Home" className="d-grid col-6 mx-auto">
                             <Button variant="success" className="mt-3 mb-5 add-number2" type="button">Add Phone Number</Button>
-                        </div>
+                        </Link>
+                        {/* </div> */}
                     </div>
                 </div>
             </aside>

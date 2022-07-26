@@ -4,6 +4,8 @@ import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
 import HambergerMenu from '../components/HambergerMenu';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ChangePin = () => {
   return (
@@ -24,7 +26,7 @@ const ChangePin = () => {
                     </div>
 
                     <div className="auth-form-wrapper py-5 d-flex justify-content-center">
-                        <div className="d-flex gap-4 flex-row pin-input-wrapper">
+                        <div className="d-flex gap-4 flex-row pin-input-wrapper" style={{marginLeft: "auto"}}>
                             <div className="d-flex align-items-center value">
                                 <input maxlength="1" min="0" max="9" type="number"/>
                             </div>
@@ -45,9 +47,11 @@ const ChangePin = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center">
-                        <button type="button" className="btn btn-primary change-pin2">Change PIN</button>
-                    </div>
+                    {/* <div className="d-flex justify-content-center"> */}
+                        <Link to="/ChangePin2" className="d-flex justify-content-center">
+                            <Button type="button" className="btn btn-primary change-pin2">Change PIN</Button>
+                        </Link>
+                    {/* </div> */}
                 </div>
             </aside>
         </article>

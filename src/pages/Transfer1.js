@@ -46,7 +46,7 @@ const Transfer1 = () => {
                         </div>
 
                         <Link to="/Transfer2" className="mt-5 ms-4">
-                            <Button variant="success">Transfer</Button>
+                            <Button variant="success" className="btn-change-password">Transfer</Button>
                         </Link>
                     </div>
                 </aside>

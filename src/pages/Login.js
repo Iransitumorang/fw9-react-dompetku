@@ -3,6 +3,8 @@ import Sidebar from '../components/Sidebar';
 import '../assets/css/Style.css';
 import Button from 'react-bootstrap/esm/Button';
 import { Link } from 'react-router-dom';
+import mail from "../assets/img/icons8-mail-24.png";
+import lock from "../assets/img/icons8-lock-24.png";
 
 function Login() {
   return (
@@ -16,13 +18,13 @@ function Login() {
                     are. Desktop, laptop, mobile phone? <br/> we cover all of that for you!</h6>
                 <div className="input-group flex-nowrap mt-5 mb-5">
                     <span className="input-group-text form-border2">
-                        <i className="fa-regular fa-envelope"></i>
+                    <img src={mail} alt="mail" />
                     </span>
                     <input type="email" className="form-control form-border" value="pewdiepie1@gmail.com"/>
                 </div>
                 <div className="input-group flex-nowrap">
                     <span className="input-group-text form-border2">
-                        <i className="fa-solid fa-lock"></i>
+                    <img src={lock} alt="lock" />
                     </span>
                     <input type="password" className="form-control form-border" placeholder="Enter your password"/>
                 </div>

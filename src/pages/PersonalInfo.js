@@ -21,8 +21,7 @@ const PersonalInfo = () => {
             <aside>
                 <div className="right-slide p-md-5">
                     <div className="mt-2 ms-3">
-                        <h3 className="personal-info">Personal Information
-                        </h3>
+                        <h3 className="personal-info">Personal Information</h3>
                         <h3 className="wegot-personal">We got your personal information from the sign <br/> up proccess. If you want
                             to make changes on <br/> your information, contact our support.</h3>
                     </div>

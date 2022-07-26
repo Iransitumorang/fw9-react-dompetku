@@ -155,9 +155,21 @@ footer,
     background-color: #76BA99;
 }
 
+.dashboard:hover,
+.transfer-nav:hover,
+.topup:hover,
+.profil-nav:hover,
+.logout-nav:hover {
+    background-color: #76BA99;
+    border-radius: 1vw;
+}
+
 /* INI STYLE HOME.JS */
 .right-slide,
-.left-slide {
+.left-slide,
+.robert-profile,
+.robert-nav,
+.right-bottom2 {
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
@@ -225,7 +237,8 @@ footer,
 }
 
 .home-transfer a,
-.home-topup a {
+.home-topup a,
+.btn-change-password {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
@@ -240,7 +253,8 @@ footer,
     color: #6A6A6A;
 }
 
-.expense {
+.expense,
+.contacts-info {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
@@ -263,7 +277,8 @@ footer,
 }
 
 /* INI STYLE HISTORY */
-.trans-history {
+.trans-history,
+.modal-span2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
@@ -419,24 +434,6 @@ footer,
     color: #7A7886;
 }
 
-.profil-notif-img {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    width: 29vw;
-    padding: 2vw;
-    height: 7vw;
-}
-
-.profil-notif-img2 {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    width: 29vw;
-    padding: 2vw;
-    margin: 1vw auto;
-    height: 7vw;
-}
-
 .this-week {
     font-weight: 400;
     font-size: 16px;
@@ -444,23 +441,10 @@ footer,
     color: #7A7886;
 }
 
-.profil-notif-img3 {
+.modal-pn {
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    width: 29vw;
-    padding: 2vw;
-    margin: 1vw auto;
-    height: 7vw;
-}
-
-.profil-notif-img4 {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    width: 29vw;
-    padding: 2vw;
-    height: 7vw;
 }
 
 /* MANAGE NUMBER */

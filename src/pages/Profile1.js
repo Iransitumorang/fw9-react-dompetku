@@ -4,6 +4,8 @@ import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
 import HambergerMenu from '../components/HambergerMenu';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import profile from "../assets/img/profil-robert.png";
 import profile1 from "../assets/img/profile-robert1.png";
@@ -24,23 +26,23 @@ const Profile1 = () => {
                     <div className="d-flex justify-content-center">
                         <img src={profile} className="img-fluid" alt='Profile User' />
                     </div>
-                    <div className="d-flex flex-column justify-content-center gap-4 mt-5 aside-value2">
-                        <a href="/ibootstrap/dashboard/personal-info.html">
+                    <div className="d-flex flex-column text-center gap-4 mt-5 aside-value2">
+                        <Link to="/PersonalInfo">
                             <img src={profile1} className="img-fluid" alt='Profile User' />
-                        </a>
-                        <a href="/ibootstrap/dashboard/change-password.html">
+                        </Link>
+                        <Link to="/ChangePassword">
                             <img src={profile2} className="img-fluid" alt='Profile User' />
-                        </a>
-                        <a href="/ibootstrap/dashboard/change-pin.html">
+                        </Link>
+                        <Link to="/ChangePin">
                             <img src={profile3} className="img-fluid" alt='Profile User' />
-                        </a>
-                        <a href="/ibootstrap/dashboard/home.html">
+                        </Link>
+                        <Link to="/Home">
                             <img src={profile4} className="img-fluid" alt='Profile User' />
-                        </a>
+                        </Link>
                     </div>
-                    <a href="/ibootstrap/dashboard/profile2.html" className="w-25 text-decoration-none" style={{marginLeft: "22vw"}}>
-                        <button type="button" className="btn btn-secondary mt-5">View Profile</button>
-                    </a>
+                    <Link to="/Profile2" className="w-25 text-decoration-none" style={{marginLeft: "25vw"}}>
+                        <Button type="button" variant="success" className="mt-5 btn-change-password">View Profile</Button>
+                    </Link>
                 </div>
             </aside>
         </article>

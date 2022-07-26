@@ -3,7 +3,8 @@ import '../assets/css/Style.css';
 import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
-import Button from 'react-bootstrap/esm/Button';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import HambergerMenu from '../components/HambergerMenu';
 
 function ChangePin2 () {
@@ -43,9 +44,11 @@ function ChangePin2 () {
                               </div>
                         </div>
                       </div>
-                      <div className="d-flex justify-content-center">
+                      {/* <div className="d-flex justify-content-center"> */}
+                      <Link to="/Home" className="d-flex justify-content-center">
                           <Button variant="success" type="button" className="change-pin-btn">Change PIN</Button>
-                      </div>
+                      </Link>
+                      {/* </div> */}
                   </div>
               </aside>
             </article>
