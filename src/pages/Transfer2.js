@@ -7,6 +7,7 @@ import HambergerMenu from '../components/HambergerMenu';
 import contactdashboard from "../assets/img/contacts-dashboard.png";
 import notes from "../assets/img/icons8-pencil-24.png";
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Transfer2 = () => {
   return (
@@ -45,9 +46,9 @@ const Transfer2 = () => {
                             </div>
                         </div>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <a href="/StatusSuccess">
-                            <Button variant="success" className="px-4 me-3 mt-5 continue" type="button" style={{fontWeight: "700", fontSize: "18px", lineHeight: "25px"}}>Continue</Button>
-                        </a>
+                            <Link to="/StatusSuccess">
+                                <Button variant="success" className="px-4 me-3 mt-5 continue" type="button" style={{fontWeight: "700", fontSize: "18px", lineHeight: "25px"}}>Continue</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>

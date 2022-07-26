@@ -148,6 +148,7 @@ section .about-top h6 {
     color: #3A3D42;
     margin: 3vw;
     font-size: 18px;
+    font-weight: 600;
 }
 
 section .about-desc {
@@ -172,7 +173,7 @@ section .about-desc .support,
 }
 
 section .support img, .data-privacy img, .easy-download img {
-    width: 11%;
+    width: 14%;
     background: rgba(71, 58, 209, 0.1);
     box-shadow: 0px 4px 20px rgb(0 0 0 / 5%);
     border-radius: 25px;
@@ -361,8 +362,8 @@ footer {
     background-color: #76BA99;
     padding: 6vw;
     color: #FFFFFF;
-    /* font-family: 'Nunito Sans'; */
     margin-bottom: 2vw;
+    font-weight: 600;
 }
 
 footer .logo-foot {

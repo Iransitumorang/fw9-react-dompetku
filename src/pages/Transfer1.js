@@ -20,7 +20,7 @@ const Transfer1 = () => {
         <div className='d-flex'>
             <Navbar />
             <HambergerMenu />
-            <article className="col-12 col-md-8 ms-5">
+            <article className="col-12 col-md-8">
                 <aside>
                     <div className="right-slide p-md-5">
                         <div className="mt-2 ms-3">

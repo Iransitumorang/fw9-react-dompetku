@@ -176,6 +176,7 @@ footer,
 }
 
 .nav-satu {
+    /* background: #5A8F7B; */
     background: #FCF8E8;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
@@ -192,7 +193,8 @@ footer,
 .logout-nav,
 .dashboard,
 .profil-nav {
-    color: rgba(58, 61, 66, 0.8);
+    font-weight: 700;
+    color: #4D4B57;
 }
 
 .left-slide-home {
@@ -514,6 +516,7 @@ footer,
 footer h3 {
     font-size: 16px !important;
     line-height: 28px !important;
+    font-weight: 700;
 }
 
 .all-reserved {
