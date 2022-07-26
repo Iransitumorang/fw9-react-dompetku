@@ -8,6 +8,7 @@ import trash from "../assets/img/trash.png"
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { Link } from 'react-router-dom';
 
 function ManageNumber () {
     const [show, setShow] = useState(false);
@@ -44,9 +45,11 @@ function ManageNumber () {
                             </Modal.Header>
                             <Modal.Body>Are you sure want to delete tihs number?</Modal.Body>
                             <Modal.Footer>
-                            <Button variant="secondary" onClick={handleClose}>
-                                Yes
-                            </Button>
+                            <Link to="/Home">
+                                <Button variant="secondary" onClick={handleClose}>
+                                    Yes
+                                </Button>
+                            </Link>
                             <Button variant="success" onClick={handleClose}>
                                 Not Sure
                             </Button>
