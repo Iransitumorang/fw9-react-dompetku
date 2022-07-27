@@ -75,7 +75,8 @@
 .login-now button,
 .rp-btn-confirm button,
 .details,
-.transfer {
+.transfer,
+.add-number2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;

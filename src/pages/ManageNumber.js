@@ -56,6 +56,9 @@ function ManageNumber () {
                             </Modal.Footer>
                         </Modal>
                     </div>
+                    <Link to="/AddNumber" className="w-25 text-decoration-none text-center" style={{marginLeft: "25vw"}}>
+                            <Button type="button" variant="success" className="mt-5 btn-change-password">Add Number</Button>
+                        </Link>
                 </div>
             </aside>
         </article>

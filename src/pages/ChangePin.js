@@ -4,8 +4,47 @@ import HeaderDashboard from '../components/HeaderDashboard';
 import FooterDashboard from '../components/FooterDashboard';
 import Navbar from '../components/Navbar';
 import HambergerMenu from '../components/HambergerMenu';
-import { Button } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import {Formik} from 'formik';
+import * as Yup from 'yup';
+
+const loginSchema = Yup.object().shape({
+    password: Yup.string().min(6).required('Required'),
+    password2: Yup.string().min(6).required('Required')
+  })
+  
+const AuthForm = ({errors, handleSubmit, handleChange})=> {
+    return (
+        <>
+         <Form className="auth-form-wrapper py-5 d-flex justify-content-center">
+            <Form.Group className="d-flex gap-4 flex-row pin-input-wrapper" style={{marginLeft: "auto"}}>
+                <div className="d-flex align-items-center value">
+                    <Form.Control maxlength="1" min="0" max="9" type="number"/>
+                </div>
+                <div className="d-flex align-items-center value">
+                    <Form.Control maxlength="1" min="0" max="9" type="number"/>
+                </div>
+                <div className="d-flex align-items-center value">
+                    <Form.Control maxlength="1" min="0" max="9" type="number"/>
+                </div>
+                <div className="d-flex align-items-center value">
+                    <Form.Control maxlength="1" min="0" max="9" type="number"/>
+                </div>
+                <div className="d-flex align-items-center value">
+                    <Form.Control maxlength="1" min="0" max="9" type="number"/>
+                </div>
+                <div className="d-flex align-items-center value">
+                    <Form.Control maxlength="1" min="0" max="9" type="number"/>
+                </div>
+            </Form.Group>
+        </Form>
+        <Link to="/ChangePin2" className="d-flex justify-content-center">
+            <Button type="button" variant="success" className="change-pin2 btn-change-password">Change PIN</Button>
+        </Link>
+        </>
+    )
+}
 
 const ChangePin = () => {
   return (
@@ -25,33 +64,14 @@ const ChangePin = () => {
                         </h3>
                     </div>
 
-                    <div className="auth-form-wrapper py-5 d-flex justify-content-center">
-                        <div className="d-flex gap-4 flex-row pin-input-wrapper" style={{marginLeft: "auto"}}>
-                            <div className="d-flex align-items-center value">
-                                <input maxlength="1" min="0" max="9" type="number"/>
-                            </div>
-                            <div className="d-flex align-items-center value">
-                                <input maxlength="1" min="0" max="9" type="number"/>
-                            </div>
-                            <div className="d-flex align-items-center value">
-                                <input maxlength="1" min="0" max="9" type="number"/>
-                            </div>
-                            <div className="d-flex align-items-center value">
-                                <input maxlength="1" min="0" max="9" type="number"/>
-                            </div>
-                            <div className="d-flex align-items-center value">
-                                <input maxlength="1" min="0" max="9" type="number"/>
-                            </div>
-                            <div className="d-flex align-items-center value">
-                                <input maxlength="1" min="0" max="9" type="number"/>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <div className="d-flex justify-content-center"> */}
-                        <Link to="/ChangePin2" className="d-flex justify-content-center">
-                            <Button type="button" className="btn btn-primary change-pin2">Change PIN</Button>
-                        </Link>
-                    {/* </div> */}
+                    <div className='d-flex flex-column gap-5' >
+                    <Formik
+                    //   onSubmit={onLoginRequest}
+                    initialValues={{password: '', password2:''}}
+                    validationSchema={loginSchema}>
+                    {(props)=><AuthForm {...props} />}
+                    </Formik>
+                </div>
                 </div>
             </aside>
         </article>

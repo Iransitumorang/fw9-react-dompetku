@@ -1,14 +1,15 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar';
 import '../assets/css/Style.css';
-// import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
-import mail from "../assets/img/icons8-mail-24.png";
-import lock from "../assets/img/icons8-lock-24.png";
-import {Form, Button} from 'react-bootstrap';
+import { useLocation, useNavigate } from "react-router-dom";
+// import mail from "../assets/img/icons8-mail-24.png";
+// import lock from "../assets/img/icons8-lock-24.png";
+import {Form, Button, Alert} from 'react-bootstrap';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
-// import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai';
+import { FiLock } from 'react-icons/fi';
 
 const loginSchema = Yup.object().shape({
     email: Yup.string().email('Invalid email address format').required('Required'),
@@ -16,36 +17,47 @@ const loginSchema = Yup.object().shape({
   })
 
   const AuthForm = ({errors, handleSubmit, handleChange})=> {
-  console.log(errors)
+    const location = useLocation();
+    const navigate = useNavigate();
+  
+    const onLogin = () => {
+      localStorage.setItem("auth", "randomToken");
+      navigate("/home");
+    };
+
   return (
     <>
-            <Form noValidate onSubmit={handleSubmit}>
-                <Form.Group className="input-group flex-nowrap mt-5 mb-5 d-flex" controlId="formBasicEmail">
-                    <div className="input-group-text form-border2">
-                        <img src={mail} alt="mail" />
-                    </div>
-                    {/* <AiOutlineMail /> */}
-                        <Form.Control name="email" onChange={handleChange} type="email" className="form-control form-border w-100 me-2" placeholder="pewdiepie1@gmail.com" isInvalid={!!errors.email}/>
-                        <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
-                </Form.Group>
+    {location.state?.errorMsg && (
+          <Alert variant="danger">{location.state.errorMsg}</Alert>
+        )}
+        <Form noValidate onSubmit={handleSubmit}>
+            <Form.Group className="input-group flex-nowrap mt-5 mb-5 d-flex" controlId="formBasicEmail">
+                <div className="input-group-text form-border2">
+                    {/* <img src={mail} alt="mail" /> */}
+                    <AiOutlineMail />
+                </div>
+                <Form.Control name="email" onChange={handleChange} type="email" className="form-control form-border w-100 me-2" placeholder="pewdiepie1@gmail.com" isInvalid={!!errors.email}/>
+                <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
+            </Form.Group>
 
-                <Form.Group className="input-group flex-nowrap" controlId="formBasicPassword">
-                    <div className="input-group-text form-border2">
-                        <img src={lock} alt="lock" />
-                    </div>
-                    <Form.Control name="password" type="password" className="form-control form-border w-100 me-2" placeholder="Enter your password" onChange={handleChange} isInvalid={!!errors.password}/>
-                    <Form.Control.Feedback type="invalid">{errors.password}</Form.Control.Feedback>
-                </Form.Group>
+            <Form.Group className="input-group flex-nowrap" controlId="formBasicPassword">
+                <div className="input-group-text form-border2">
+                    {/* <img src={lock} alt="lock" /> */}
+                    <FiLock />
+                </div>
+                <Form.Control name="password" type="password" className="form-control form-border w-100 me-2" placeholder="Enter your password" onChange={handleChange} isInvalid={!!errors.password}/>
+                <Form.Control.Feedback type="invalid">{errors.password}</Form.Control.Feedback>
+            </Form.Group>
 
-                <div className="text-end password">
+                <div className="text-end password mt-2">
                     <Link to="/ResetPassword">Forgot Password?</Link>
                 </div>
                 <h3 className="invalid mt-3">Email or Password Invalid</h3>
                 <Link to="/Home" className="d-grid btn-login underlines">
-                    <Button type="submit" variant="success">Login</Button>
+                    <Button type="submit" variant="success" onClick={onLogin}>Login</Button>
                 </Link>
                 <h3 className="signup">Don’t have an account? Let’s <Link to="/Signup">Sign Up</Link></h3>
-            </Form>
+        </Form>
     </>
   )
 }

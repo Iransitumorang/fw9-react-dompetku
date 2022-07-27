@@ -3,7 +3,7 @@ import "../assets/css/Style.css";
 import HeaderDashboard from "../components/HeaderDashboard";
 import FooterDashboard from "../components/FooterDashboard";
 import Navbar from "../components/Navbar";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import HambergerMenu from "../components/HambergerMenu";
 import transfer from "../assets/img/arrow-up.png";
 import topup from "../assets/img/plus.png";
@@ -16,8 +16,11 @@ import arrowdown from "../assets/img/icons8-down-24.png";
 import arrowup from "../assets/img/icons8-up-arrow-24.png";
 
 const Home = () => {
+  const location = useLocation();
+  
   return (
     <div>
+      {location.state?.id && <h4>{location.state.id}</h4>}
       <HeaderDashboard />
       <div className="d-flex">
         <Navbar />

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/Style.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import dashboard from "../assets/img/icons8-dashboard-32.png";
 import transfer from "../assets/img/icons8-up-arrow-32.png";
@@ -9,6 +9,12 @@ import profile from "../assets/img/icons8-person-32.png";
 import logout from "../assets/img/icons8-logout-32.png";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const onLogout = () => {
+    localStorage.removeItem("auth");
+    navigate("/");
+  };
+
   function berubah() {
     document.getElementById("dashboard").style.color = "Green";
   }
@@ -31,8 +37,8 @@ function Navbar() {
               </Link>
             </nav>
 
-            <nav className='ms-3'>
-              <Link onClick={berubah} className="nav-link logout-nav ps-3" to="/Login">
+            <nav className='ms-2'>
+              <Link onClick={onLogout}className="nav-link logout-nav ps-3" to="/Login">
                 <img src={logout} style={{width: "15%"}} className="img-fluid me-3" alt='Logout'/> Logout
               </Link>
             </nav>
