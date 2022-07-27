@@ -22,13 +22,13 @@ function signup() {
                         <span className="input-group-text form-border2" style={{marginLeft: "-5px"}}>
                             <img src={user} alt="user" />
                         </span>
-                        <input type="text" className="form-control form-border" value="Jonathan Mandel"/>
+                        <input type="text" className="form-control form-border" placeholder="Jonathan Mandel"/>
                     </div>
                     <div className="input-group flex-nowrap mt-5 mb-5">
                         <span className="input-group-text form-border2">
                             <img src={mail} alt="mail" />
                         </span>
-                        <input type="email" className="form-control form-border" value="pewdiepie1@gmail.com"/>
+                        <input type="email" className="form-control form-border" placeholder="pewdiepie1@gmail.com"/>
                     </div>
                     <div className="input-group flex-nowrap mb-3">
                         <span className="input-group-text form-border2">
