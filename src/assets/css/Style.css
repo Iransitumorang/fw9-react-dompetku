@@ -3,8 +3,11 @@
 * {
     font-family: 'Nunito Sans';
     font-style: normal;
+    border-color: unset !important;
+    box-shadow: none !important;
 }
 
+/* ======================== */
 .right-slide-login {
     /* background-image: url(../images/background-login.png); */
     background-color: #76BA99;
