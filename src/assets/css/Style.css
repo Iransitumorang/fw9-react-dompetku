@@ -314,20 +314,35 @@ footer,
     line-height: 25px;
 }
 
-.type-amount {
+.amount-value {
+    width: 50%;
+    font-size: 3vw;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+}
+
+.amount-value::placeholder {
+    text-align: center;
+    /* width: 50%; */
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+/* .type-amount {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     color: #7A7886;
-}
+} */
 
-.seratus-ribu {
+/* .seratus-ribu {
     font-weight: 700;
     font-size: 42px;
     line-height: 56px;
     text-align: center;
     color: #6379F4;
-}
+} */
 
 .seratus20 {
     font-weight: 700;

@@ -11,7 +11,7 @@ import * as Yup from 'yup';
 import { BsTelephone } from 'react-icons/bs';
 
 const loginSchema = Yup.object().shape({
-    phoneNumber: Yup.string().min(10).max(15).required('Required')
+    phoneNumber: Yup.string().min(10, 'Number Minimum 10 Character').max(14, 'Number Maximum 14 Character').required('required')
   })
   
 const AuthForm = ({errors, handleSubmit, handleChange})=> {
@@ -50,7 +50,7 @@ const AddNumber = () => {
                         </h3>
                     </div>
 
-                    <div className='d-flex flex-column gap-5' >
+                <div className='d-flex flex-column gap-5' >
                     <Formik
                     //   onSubmit={onLoginRequest}
                     initialValues={{phoneNumber: ''}}

@@ -19,7 +19,7 @@ const loginSchema = Yup.object().shape({
 const AuthForm = ({errors, handleSubmit, handleChange})=> {
     return (
         <>
-        <Form className="d-flex flex-column align-items-center gap-3 px-5" onSubmit={handleSubmit}>
+            <Form className="d-flex flex-column align-items-center gap-3 px-5" onSubmit={handleSubmit}>
                 <Form.Group className="input-group flex-nowrap mb-3">
                     <span className="input-group-text form-border2">
                     <img src={lock} className="img-fluid" alt='lock' />
