@@ -9,50 +9,59 @@
     font-style: normal;
 }
 
-.hamburger, .sidebar {
+/* .hamburger,
+.sidebar {
     display: none;
-}
+} */
 
 header {
     display: flex;
     justify-content: space-between;
 }
 
-header .menu .logo img:nth-child(1) {
+header .menu .logo img:nth-child(1),
+.header-responsive .logo img:nth-child(1) {
     width: 12%;
     margin: 3vw 1vw -1vw 6vw;
 }
 
-header .menu .logo img:nth-child(2) {
+header .menu .logo img:nth-child(2),
+.header-responsive .logo img:nth-child(2) {
     width: 25%;
     margin-top: 4vw;
 }
 
-header .awesome {
+header .awesome,
+.awesome-responsive {
     margin-left: 6vw;
     margin-top: 11vw;
     color: #3A3D42;
 }
 
-header .awesome .saving {
+header .awesome .saving,
+.awesome-responsive .saving {
     font-size: 5vw;
     font-style: normal;
     font-weight: 800;
     /* font-family: 'Nunito Sans', sans-serif; */
 }
 
-header .awesome h6 {
+header .awesome h6,
+.awesome-responsive h6 {
     /* font-family: 'Nunito Sans', sans-serif; */
     font-weight: 400;
     margin: 3vw auto;
     font-size: 17px;
 }
 
-header .awesome .time {
+header .awesome .time,
+.awesome-responsive .time {
     color: #76BA99;
 }
 
-header .awesome button {
+header .awesome button,
+.awesome-responsive button,
+.btn-header-resp button {
     width: 11vw;
     height: 4vw;
     font-style: normal;
@@ -65,7 +74,6 @@ header .awesome button {
 }
 
 .header-right {
-    /* background-image: url(../img/button-bg-blue.png); */
     width: 45%;
     background-color: #76BA99;
     border-bottom-left-radius: 20vw;
@@ -172,7 +180,9 @@ section .about-desc .support,
     font-size: 24px;
 }
 
-section .support img, .data-privacy img, .easy-download img {
+section .support img,
+.data-privacy img,
+.easy-download img {
     width: 14%;
     background: rgba(71, 58, 209, 0.1);
     box-shadow: 0px 4px 20px rgb(0 0 0 / 5%);
@@ -185,7 +195,9 @@ section .icons8 {
     margin-bottom: 15px;
 }
 
-section .support h6, .data-privacy h6, .easy-download h6 {
+section .support h6,
+.data-privacy h6,
+.easy-download h6 {
     font-size: 18px;
 }
 
@@ -399,12 +411,57 @@ footer .contact span:nth-child(2) {
     margin-left: 2vw;
 }
 
-@media (max-width: 1115px) {
+.awesome-responsive,
+.header-responsive,
+.transaction-hst-rsp,
+.header-right {
+    display: none;
+}
+
+.awesome,
+.transaction-hst,
+.awesome-responsive br,
+.support br,
+.header-right,
+.data-privacy br,
+.easy-download br,
+.tp-left h6 br,
+.sherina br,
+.jessica br,
+.robert br,
+.menu {
+    display: block;
+}
+
+@media only screen and (max-width: 1239px) {
+
+    .support,
+    .data-privacy,
+    .easy-download {
+        height: 18vw !important;
+    }
+
+    .support br,
+    .data-privacy br,
+    .easy-download br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1118px) {
+    .header-right {
+        background-color: unset !important;
+    }
+
+    .header-right img {
+        display: none;
+    }
+
     .header-right button {
         margin-left: 3vw !important;
     }
 
-    .header-right .btn-signup {
+    .header-right .lp-signup .btn-lp-signup {
         width: 9vw !important;
     }
 
@@ -418,6 +475,102 @@ footer .contact span:nth-child(2) {
     }
 }
 
+@media only screen and (max-width: 996px) {
+    .awesome-responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 35vw;
+        margin-top: 5vw;
+    }
+
+    .saving {
+        /* margin-top: -5vw; */
+        margin-bottom: -3vw;
+    }
+
+    .btn-lp-signup {
+        background-color: #FFFFFF !important;
+        color: #76BA99 !important;
+        box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+        border: 2px solid #76BA99 !important;
+        border-radius: 12px;
+    }
+
+    .try-it-free button {
+        width: 25vw;
+    }
+
+    .header-responsive,
+    .transaction-hst-rsp {
+        display: flex;
+    }
+
+    .awesome,
+    .transaction-hst,
+    .awesome-responsive br,
+    .support br,
+    .data-privacy br,
+    .easy-download br,
+    .tp-left h6 br,
+    .sherina br,
+    .jessica br,
+    .robert br,
+    .menu,
+    .header-right {
+        display: none;
+    }
+
+    .btn-header-resp {
+        margin-top: 5vw;
+    }
+
+    .login {
+        margin-right: 3vw;
+    }
+
+    .support,
+    .data-privacy,
+    .easy-download {
+        height: 23vw !important;
+    }
+
+    .sherina,
+    .jessica,
+    .robert {
+        height: 24vw !important;
+    }
+}
+
+@media only screen and (max-width: 963px) {
+    .trusted-partner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trusted-partner br {
+        display: none;
+    }
+
+    section .thegreat {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thegreat br {
+        display: none;
+    }
+
+    .great-features {
+        margin-top: unset;
+    }
+
+    .thegreat123 {
+        width: auto !important;
+    }
+}
+
+/* 
 @media (max-width: 1049px) {
 
     .sherina,
@@ -435,11 +588,6 @@ footer .contact span:nth-child(2) {
         height: 35vw !important;
     }
 }
-
-/* .hamburger,
-.sidebar {
-    display: none;
-} */
 
 @media (max-width: 1000px) {
     .transaction-hst {
@@ -632,7 +780,7 @@ footer .contact span:nth-child(2) {
     .trans-hst-responsive {
         width: 100% !important;
     }
-}
+} */
 
 /* 
 @media (max-width: 1117px) {

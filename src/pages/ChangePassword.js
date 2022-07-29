@@ -16,6 +16,10 @@ const loginSchema = Yup.object().shape({
   password3: Yup.string().min(6).required('Required')
 })
 
+// if (password3 !=== password2) {
+//     Yup.string().required('Password baru harus sama')
+//   };
+
 const AuthForm = ({errors, handleSubmit, handleChange})=> {
     return (
         <>

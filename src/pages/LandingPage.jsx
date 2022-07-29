@@ -23,28 +23,22 @@ function LandingPage() {
 
   return (
     <div>
-        <div className="hamburger">
-          <div className="toggler-navbar">
-            <div className="hamburger-menu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+      <header>
+        <div className="header-responsive">
+          <div className="logo">
+            <img src={dompetku} alt="logo dompetku" />
+            <img src={dompetku2} alt="logo dompetku" />
           </div>
-        <Link className="logo-hbg" to="/Home">
-            <img src={dompetku2} alt="dompetku"/>
-        </Link>
-        </div>
-        <div className="sidebar">
-          <div>
-            <Link to="/Login" className="login-hamburger">Login</Link>
-          </div>
-          <div>
-            <Link to="/Signup" className="login-hamburger">Sign Up</Link>
+          <div className="btn-header-resp">
+            <Link to="/Login" className="login">
+              <button>Login</button>
+            </Link>
+            <Link to="/Signup" className="lp-signup">
+              <button className="btn-lp-signup">Sign Up</button>
+            </Link>
           </div>
         </div>
 
-      <header>
         <div className="menu">
           <div className="logo">
             <img src={dompetku} alt="logo dompetku" />
@@ -62,7 +56,6 @@ function LandingPage() {
               <button>Try It Free</button>
             </Link>
           </div>
-          {/* <img src={} alt="Transaction History" className="trans-hst-responsive"/> */}
         </div>
         <div className="header-right">
           <Link to="/Login" className="login">
@@ -74,11 +67,24 @@ function LandingPage() {
           <img src={sircleLine} className="sircle-line" alt="sircle-line" />
         </div>
       </header>
-      <img
-        src={phoneHeader}
-        alt="Transaction History"
-        className="transaction-hst"
-      />
+
+      <div className="awesome-responsive">
+            <span className="saving">
+              Awesome App <br /> For Saving <span className="time"> Time.</span>
+            </span>
+            <h6>
+              We bring you a mobile app for banking problems that <br /> oftenly
+              wasting much of your times.
+            </h6>
+            <Link to="/Signup" className="try-it-free">
+              <button>Try It Free</button>
+            </Link>
+
+            <img src={phoneHeader} alt="Transaction History" className="transaction-hst-rsp"/>
+          </div>
+
+          <img src={phoneHeader} alt="Transaction History"
+        className="transaction-hst"/>
 
       <section>
         <aside className="about">
@@ -149,7 +155,7 @@ function LandingPage() {
           </div>
           <div className="great-features">
             <span className="zwallet-features">
-              All The <span className="great">Great</span>
+              All The <span className="great"> Great </span>
               <br />
               Zwallet Features.
             </span>
