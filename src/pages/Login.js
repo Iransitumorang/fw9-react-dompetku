@@ -1,15 +1,15 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar';
 import '../assets/css/Style.css';
+// import { Link, useLocation, useNavigate, Alert } from "react-router-dom";
+import {Form, Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { useLocation, useNavigate } from "react-router-dom";
-// import mail from "../assets/img/icons8-mail-24.png";
-// import lock from "../assets/img/icons8-lock-24.png";
-import {Form, Button, Alert} from 'react-bootstrap';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FiLock } from 'react-icons/fi';
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 const loginSchema = Yup.object().shape({
     email: Yup.string().email('Invalid email address format').required('Required'),
@@ -17,26 +17,29 @@ const loginSchema = Yup.object().shape({
   })
 
   const AuthForm = ({errors, handleSubmit, handleChange})=> {
-    const location = useLocation();
-    const navigate = useNavigate();
+    // const location = useLocation();
+    // const navigate = useNavigate();
   
-    const onLogin = () => {
-      localStorage.setItem("auth", "randomToken");
-      navigate("/home");
-    };
+    // const onLogin = () => {
+    //   localStorage.setItem("auth", "randomToken");
+    //   navigate("/home");
+    // };
+
+    const { loginWithRedirect, isAuthenticated } = useAuth0();
 
   return (
+        !isAuthenticated && (
     <>
-    {location.state?.errorMsg && (
+    {/* {location.state?.errorMsg && (
           <Alert variant="danger">{location.state.errorMsg}</Alert>
-        )}
+        )} */}
         <Form noValidate onSubmit={handleSubmit}>
             <Form.Group className="input-group flex-nowrap mt-5 mb-5 d-flex" controlId="formBasicEmail">
                 <div className="input-group-text form-border2">
                     {/* <img src={mail} alt="mail" /> */}
                     <AiOutlineMail />
                 </div>
-                <Form.Control name="email" onChange={handleChange} type="email" className="form-control form-border w-100 me-2" placeholder="pewdiepie1@gmail.com" isInvalid={!!errors.email}/>
+                <Form.Control name="email" onChange={handleChange} type="email" className="form-control form-border w-100 me-2" placeholder="Pewdiepie1@gmail.com" isInvalid={!!errors.email}/>
                 <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
             </Form.Group>
 
@@ -54,22 +57,31 @@ const loginSchema = Yup.object().shape({
                 </div>
                 <h3 className="invalid mt-3">Email or Password Invalid</h3>
                 <Link to="/Home" className="d-grid btn-login underlines">
-                    <Button type="submit" variant="success" onClick={onLogin}>Login</Button>
+                    <Button type="submit" variant="success" onClick={() => loginWithRedirect()}>Login</Button>
                 </Link>
                 <h3 className="signup">Don’t have an account? Let’s <Link to="/Signup">Sign Up</Link></h3>
         </Form>
     </>
+        )
   )
 }
 
 function Login() {
-    // const onLoginRequest = (val) => {
-    //     if(val.email === 'admin@mail.com' && val.password === '1234'){
-    //       window.alert('Login success')
-    //     }else{
-    //       window.alert('Login Failed')
-    //     }
+    // const dispatch = useDispatch();
+    // const token = useSelector((state) => state.auth.token);
+    // const navigate = useNavigate();
+  
+    // const onLogin = (value) => {
+    //   const data = { email: value.email, password: value.password };
+    //   dispatch(login(data));
+    // };
+  
+    // React.useEffect(() => {
+    //   if (token) {
+    //     navigate("/dashboard");
     //   }
+    // }, [navigate, token]);
+
   return (
     <>
         <div className='d-flex'>

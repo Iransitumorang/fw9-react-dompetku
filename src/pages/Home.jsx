@@ -8,12 +8,20 @@ import HambergerMenu from "../components/HambergerMenu";
 import transfer from "../assets/img/arrow-up.png";
 import topup from "../assets/img/plus.png";
 import grafik from "../assets/img/graphic.png";
-import dashboard from "../assets/img/history-dashboard.png";
-import dashboard1 from "../assets/img/history-dashboard-1.png";
-import dashboard2 from "../assets/img/history-dashboard-2.png";
-import dashboard3 from "../assets/img/history-dashboard-3.png";
 import arrowdown from "../assets/img/icons8-down-24.png";
 import arrowup from "../assets/img/icons8-up-arrow-24.png";
+import jekeen from "../assets/img/jessica-keen.png";
+import samsuhi from "../assets/img/sam-suhi.jpg";
+import adobe from "../assets/img/adobe.png";
+import netflix from "../assets/img/netflix.png";
+
+function Data(props) {
+  return <span className='search-receiver'> {props.name}</span>
+}
+
+function Contacts(props) {
+  return <span className='desc-tf'>{props.desc}</span>
+}
 
 const Home = () => {
   const location = useLocation();
@@ -86,27 +94,47 @@ const Home = () => {
                 </Link>
               </div>
 
-              <div>
-                <img
-                  src={dashboard}
-                  alt="History Dashboard"
-                  className="img-fluid"
-                />
-                <img
-                  src={dashboard2}
-                  alt="History Dashboard"
-                  className="img-fluid"
-                />
-                <img
-                  src={dashboard1}
-                  alt="History Dashboard"
-                  className="img-fluid"
-                />
-                <img
-                  src={dashboard3}
-                  alt="History Dashboard"
-                  className="img-fluid"
-                />
+              <div className="d-flex flex-column gap-4 p-4">
+                <div className='d-flex flex-row'>
+                    <img src={samsuhi} alt="Samuel Suhi"/>
+                   <div className="d-flex flex-fill justify-content-between">
+                    <div className='d-flex flex-column ms-3'>
+                        <Data name="Samuel Suhi"/>
+                        <Contacts desc="Transfer"/>
+                      </div>
+                      <span className="home-rp">+Rp 50.000</span>
+                   </div>
+                </div>
+                <div className='d-flex flex-row'>
+                    <img src={netflix} alt="Netflix" className="bg-white"/>
+                  <div className="d-flex flex-fill justify-content-between">
+                    <div className='d-flex flex-column ms-3'>
+                      <Data name="Netflix"/>
+                      <Contacts desc="Subscription"/>
+                    </div>
+                    <span className="home-rp2">-Rp149.000</span>
+                  </div>
+                </div>
+                <div className='d-flex flex-row'>
+                      <img src={jekeen} alt="Christine Mar"/>
+                  <div className="d-flex flex-fill justify-content-between">
+                      <div className='d-flex flex-column ms-3'>
+                        <Data name="Christine Mar..."/>
+                        <Contacts desc="Transfer"/>
+                      </div>
+                      <span className="home-rp">+Rp 150.000</span>
+                  </div>
+                </div>
+                <div className='d-flex flex-row'>
+                      <img src={adobe} alt="Adobe Inc." className="bg-white2"/>
+                  <div className="d-flex flex-fill justify-content-between">
+                      <div className='d-flex flex-column ms-3'>
+                        <Data name="Adobe Inc."/>
+                        <Contacts desc="Subscription"/>
+                      </div>
+                      <span className="home-rp2">-Rp249.000</span>
+                  </div>
+                </div>
               </div>
             </div>
           </aside>

@@ -113,12 +113,6 @@ a {
     color: #FFFFFF;
 }
 
-/* article {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 25px;
-} */
-
 /* INI STYLE TAMBAHAN UNTUK CREATE PIN 1 */
 .auth-form-wrapper {
     padding-top: 15opx;
@@ -228,6 +222,37 @@ footer,
     color: #DFDCDC;
 }
 
+.home-rp {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1EC15F;
+}
+
+.home-rp2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF5B37;
+}
+
+.bg-white {
+    top: calc(50% - 56px/2);
+    background: #EBEEF2;
+    border-radius: 10px;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    height: 45px;
+}
+
+.bg-white2 {
+    top: calc(50% - 56px/2);
+    background: #EBEEF2;
+    border-radius: 10px;
+    padding-left: 1.5vw;
+    padding-right: 1vw;
+}
+
 /* .transfer {
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid #FFFFFF;
@@ -306,7 +331,14 @@ footer,
     color: #7A7886;
 }
 
-/* INI STYLE TRANSFER 2 */
+/* INI STYLE TRANSFER */
+.numb-tf {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7A7886;
+}
+
 .search-receiver,
 .transfer-money {
     font-weight: 700;

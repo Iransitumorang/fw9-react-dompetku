@@ -1,19 +1,14 @@
 import React from 'react';
 import '../assets/css/Style.css';
-import { Link, useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+import LogoutButton from "../components/LogoutButton";
 import dashboard from "../assets/img/icons8-dashboard-32.png";
 import transfer from "../assets/img/icons8-up-arrow-32.png";
 import topup from "../assets/img/icons8-plus-32.png";
 import profile from "../assets/img/icons8-person-32.png";
-import logout from "../assets/img/icons8-logout-32.png";
 
 function Navbar() {
-  const navigate = useNavigate();
-  const onLogout = () => {
-    localStorage.removeItem("auth");
-    navigate("/");
-  };
+
 
   function berubah() {
     document.getElementById("dashboard").style.color = "Green";
@@ -38,9 +33,7 @@ function Navbar() {
             </nav>
 
             <nav className='ms-2'>
-              <Link onClick={onLogout}className="nav-link logout-nav ps-3" to="/Login">
-                <img src={logout} style={{width: "15%"}} className="img-fluid me-3" alt='Logout'/> Logout
-              </Link>
+              <LogoutButton />
             </nav>
           </div>
         </nav>

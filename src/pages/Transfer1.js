@@ -7,11 +7,19 @@ import HambergerMenu from '../components/HambergerMenu';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import contactdashboard from "../assets/img/contacts-dashboard.png";
-import contactdashboard1 from "../assets/img/contacts-dashboard-1.png";
-import contactdashboard2 from "../assets/img/contacts-dashboard-2.png";
-import contactdashboard3 from "../assets/img/contacts-dashboard-3.png";
+import samsuhi from "../assets/img/sam-suhi.jpg";
+import motoro from "../assets/img/momo-toro.png";
+import jekeen from "../assets/img/jessica-keen.png";
+import mile from "../assets/img/mile.png";
 import search from "../assets/img/icons8-search-24.png";
+
+function Data(props) {
+    return <span className='search-receiver'> {props.name}</span>
+}
+
+function Contacts(props) {
+    return <span className='numb-tf'>{props.number}</span>
+}
 
 const Transfer1 = () => {
   return (
@@ -36,12 +44,36 @@ const Transfer1 = () => {
                             </div>
                         </div>
 
-                        <div className="d-flex flex-column">
-                            <div className="d-flex flex-column">
-                                <img src={contactdashboard} alt="Dashboard Dashboard" />
-                                <img src={contactdashboard1} alt="Dashboard Dashboard" />
-                                <img src={contactdashboard2} alt="Dashboard Dashboard" />
-                                <img src={contactdashboard3} alt="Dashboard Dashboard" />
+                        <div className="d-flex flex-column mb-5">
+                            <div className="d-flex flex-column gap-5">
+                                <div className='d-flex flex-row'>
+                                    <img src={samsuhi} alt="Samuel Suhi"/>
+                                    <div className='d-flex flex-column ms-3'>
+                                        <Data name="Samuel Suhi"/>
+                                        <Contacts number="+62 813-8492-9994"/>
+                                    </div>
+                                </div>
+                                <div className='d-flex flex-row'>
+                                    <img src={motoro} alt="Momo Taro"/>
+                                    <div className='d-flex flex-column ms-3'>
+                                        <Data name="Momo Taro"/>
+                                        <Contacts number="+62 812-4343-6731"/>
+                                    </div>
+                                </div>
+                                <div className='d-flex flex-row'>
+                                    <img src={jekeen} alt="Jessica Keen"/>
+                                    <div className='d-flex flex-column ms-3'>
+                                        <Data name="Jessica Keen"/>
+                                        <Contacts number="+62 811-3452-5252"/>
+                                    </div>
+                                </div>
+                                <div className='d-flex flex-row'>
+                                    <img src={mile} alt="Michael Le"/>
+                                    <div className='d-flex flex-column ms-3'>
+                                        <Data name="Michael Le"/>
+                                        <Contacts number="+62 810-4224-4613"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
