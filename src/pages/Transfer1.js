@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import HambergerMenu from '../components/HambergerMenu';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Pagination from 'react-bootstrap/Pagination';
 
 import samsuhi from "../assets/img/sam-suhi.jpg";
 import motoro from "../assets/img/momo-toro.png";
@@ -80,6 +81,11 @@ const Transfer1 = () => {
                         <Link to="/Transfer2" className="mt-5 ms-4">
                             <Button variant="success" className="btn-change-password">Transfer</Button>
                         </Link>
+
+                    <Pagination className='mt-5'>
+                        <Pagination.Item>Prev Page</Pagination.Item>
+                        <Pagination.Item>Next Page</Pagination.Item>
+                    </Pagination>
                     </div>
                 </aside>
             </article>

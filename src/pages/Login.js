@@ -48,7 +48,7 @@ const loginSchema = Yup.object().shape({
                     {/* <img src={lock} alt="lock" /> */}
                     <FiLock />
                 </div>
-                <Form.Control name="password" type="password" className="form-control form-border w-100 me-2" placeholder="Enter your password" onChange={handleChange} isInvalid={!!errors.password}/>
+                <Form.Control name="password" type="password" className="form-control form-border w-100 me-2" placeholder="Enter your password"  onChange={handleChange} isInvalid={!!errors.password}/>
                 <Form.Control.Feedback type="invalid">{errors.password}</Form.Control.Feedback>
             </Form.Group>
 

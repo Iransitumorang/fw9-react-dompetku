@@ -10,6 +10,11 @@
     box-shadow: none !important;
 }
 
+Nav a.active {
+    color: #E0E0E0;
+    background-color: #76BA99;
+}
+
 /* ======================== */
 .right-slide-login {
     /* background-image: url(../images/background-login.png); */
