@@ -4,10 +4,6 @@ import FooterDashboard from '../components/FooterDashboard';
 import HeaderDashboard from '../components/HeaderDashboard';
 import Navbar from '../components/Navbar';
 import HambergerMenu from '../components/HambergerMenu';
-// import React, { useState } from 'react';
-// import Modal from 'react-bootstrap/Modal';
-// import dompetku2 from "../assets/img/dompetku2.png";
-// import right from "../assets/img/home-header.png";
 import { Link } from 'react-router-dom';
 import transfer from "../assets/img/arrow-up.png";
 import topup from "../assets/img/plus.png";
@@ -18,8 +14,6 @@ import dashboard2 from "../assets/img/history-dashboard-2.png";
 import dashboard3 from "../assets/img/history-dashboard-3.png";
 import arrowdown from "../assets/img/icons8-down-24.png";
 import arrowup from "../assets/img/icons8-up-arrow-24.png";
-// import head from "../assets/img/robert-head.png";
-// import notif from "../assets/img/robert-notif.png";
 
 const ProfileNotif = () => {
     // const [show, setShow] = useState(false);

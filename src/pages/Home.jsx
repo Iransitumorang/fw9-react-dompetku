@@ -30,7 +30,7 @@ const Home = () => {
     <div>
       {location.state?.id && <h4>{location.state.id}</h4>}
       <HeaderDashboard />
-      <div className="d-flex">
+      <div className="d-flex resp-home">
         <Navbar />
         <HambergerMenu />
 

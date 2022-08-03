@@ -25,7 +25,8 @@ import ChangePin from './pages/ChangePin';
 import ChangePin2 from './pages/ChangePin2';
 import AddNumber from './pages/AddNumber';
 import ManageNumber from './pages/ManageNumber';
-import Test from './pages/Test';
+// import ProtectedRoute from './auth/ProtectedRoute';
+// import PrivateRoutes from './PrivateRoutes';
 
 function App() {
   return (
@@ -56,7 +57,6 @@ function App() {
         <Route path="/ChangePin2" element={<ChangePin2 />}></Route>
         <Route path="/AddNumber" element={<AddNumber />}></Route>
         <Route path="/ManageNumber" element={<ManageNumber />}></Route>
-        <Route path="/Test" element={<Test />}></Route>
       </Routes>
     </Router>
   )

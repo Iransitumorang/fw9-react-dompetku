@@ -14,7 +14,7 @@ function LogoutButton() {
   return (
     isAuthenticated && (
     <div>
-        <NavLink onClick={() => logout({ returnTo: window.location.origin })} activeClassname="active" className="nav-link      logout-nav ps-3" to="/Login">
+        <NavLink onClick={() => logout({ returnTo: window.location.origin })} activeClassname="active" className="nav-link logout-nav ps-3" to="/Login">
             <img src={logoutImg} style={{width: "15%"}} className="img-fluid me-3" alt='Logout' /> Logout
         </NavLink>
     </div>

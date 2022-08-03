@@ -10,7 +10,8 @@ import profile from "../assets/img/icons8-person-32.png";
 function Navbar() {
   return (
     <>
-        <nav className="col-md-3 d-md-flex ms-5 p-5 p-md-5 me-5 nav-satu d-none">
+        <nav className="col-md-3 ms-5 p-5 p-md-5 me-5 nav-satu">
+        {/* <nav className="col-md-3 d-md-flex ms-5 p-5 p-md-5 me-5 nav-satu d-none"> */}
           <div className="d-flex flex-column parent-div">
             <nav className="nav flex-fill flex-column">
               <NavLink activeClassname="active" className="nav-link dashboard mb-3" to="/Home">

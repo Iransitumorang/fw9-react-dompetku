@@ -10,9 +10,8 @@ import right from "../assets/img/home-header.png";
 function HambergerMenu() {
   return (
     <>
-        {/* <!-- HAMBURGER MENU === HAMBURGER MENU --> */}
-    <div className="navbar bg-light fixed-top d-md-none d-block" >
-      {/* <div className="container-fluid"> */}
+    <div className="navbar bg-light fixed-top hamberger-menu" >
+    {/* <div className="navbar bg-light fixed-top d-md-none d-block" > */}
       <div>
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">

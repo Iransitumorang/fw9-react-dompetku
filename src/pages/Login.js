@@ -28,7 +28,7 @@ const loginSchema = Yup.object().shape({
     const { loginWithRedirect, isAuthenticated } = useAuth0();
 
   return (
-        !isAuthenticated && (
+    !isAuthenticated && (
     <>
     {/* {location.state?.errorMsg && (
           <Alert variant="danger">{location.state.errorMsg}</Alert>
@@ -63,10 +63,11 @@ const loginSchema = Yup.object().shape({
         </Form>
     </>
         )
-  )
-}
 
-function Login() {
+        )
+    }
+    
+    function Login() {
     // const dispatch = useDispatch();
     // const token = useSelector((state) => state.auth.token);
     // const navigate = useNavigate();

@@ -1,6 +1,6 @@
 import Placeholder from 'react-bootstrap/Placeholder';
 
-function AnimationExample() {
+function Loading() {
   return (
     <>
       <Placeholder as="p" animation="glow">
@@ -13,4 +13,4 @@ function AnimationExample() {
   );
 }
 
-export default AnimationExample;
+export default Loading;

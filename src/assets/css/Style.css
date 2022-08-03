@@ -589,3 +589,21 @@ footer h3 {
     font-weight: 600;
     color: #EFEFEF;
 }
+
+.nav-satu {
+    display: flex;
+}
+
+.hamberger-menu {
+    display: none;
+}
+
+@media (max-width: 1075px) {
+    .nav-satu {
+        display: none;
+    }
+
+    .hamberger-menu {
+        display: flex;
+    }
+}
