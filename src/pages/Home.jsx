@@ -49,7 +49,7 @@ const Home = () => {
                     style={{ width: "20%" }}
                     alt="transfer"
                     className="home-tf"
-                  />{" "}
+                  />
                   Transfer
                 </Link>
               </div>
