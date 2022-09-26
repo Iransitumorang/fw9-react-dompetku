@@ -8,7 +8,7 @@ import {Formik} from 'formik';
 import * as Yup from 'yup';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FiLock } from 'react-icons/fi';
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 
 
 const loginSchema = Yup.object().shape({
@@ -25,10 +25,10 @@ const loginSchema = Yup.object().shape({
     //   navigate("/home");
     // };
 
-    const { loginWithRedirect, isAuthenticated } = useAuth0();
+    // const { loginWithRedirect, isAuthenticated } = useAuth0();
 
   return (
-    !isAuthenticated && (
+    // !isAuthenticated && (
     <>
     {/* {location.state?.errorMsg && (
           <Alert variant="danger">{location.state.errorMsg}</Alert>
@@ -57,12 +57,12 @@ const loginSchema = Yup.object().shape({
                 </div>
                 <h3 className="invalid mt-3">Email or Password Invalid</h3>
                 <Link to="/Home" className="d-grid btn-login underlines">
-                    <Button type="submit" variant="success" onClick={() => loginWithRedirect()}>Login</Button>
+                    <Button type="submit" variant="success" >Login</Button>
                 </Link>
                 <h3 className="signup">Don’t have an account? Let’s <Link to="/Signup">Sign Up</Link></h3>
         </Form>
     </>
-        )
+        // )
 
         )
     }
